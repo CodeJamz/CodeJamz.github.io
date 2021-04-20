@@ -4,15 +4,25 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>【NLP】1.传统算法与机器学习算法的复杂度分析 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="传统算法与机器学习算法的复杂度分析  一、迭代算法的复杂度 1234for i : 1 to length of A    if A[i] is equal to x:        return TRUE    return FALSE 即计算执行时间随数据规模的增长趋势  与输入规模相关 与当前输入与全部输入的关系相关（最小复杂度，最大复杂度）   算法的复杂度的记法  𝑂(𝑔(𝑛))">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【NLP】1.传统算法与机器学习算法的复杂度分析">
+<meta property="og:url" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="传统算法与机器学习算法的复杂度分析  一、迭代算法的复杂度 1234for i : 1 to length of A    if A[i] is equal to x:        return TRUE    return FALSE 即计算执行时间随数据规模的增长趋势  与输入规模相关 与当前输入与全部输入的关系相关（最小复杂度，最大复杂度）   算法的复杂度的记法  𝑂(𝑔(𝑛))">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419215659379.png">
+<meta property="og:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419220552341.png">
+<meta property="og:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419225956620.png">
+<meta property="og:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419230748598.png">
+<meta property="og:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419230935326.png">
+<meta property="article:published_time" content="2021-04-20T13:01:17.000Z">
+<meta property="article:modified_time" content="2021-04-20T13:03:39.179Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/image-20210419215659379.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +79,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-【NLP】1-传统算法与机器学习算法的复杂度分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-【NLP】1-传统算法与机器学习算法的复杂度分析" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" class="article-date">
   <time class="dt-published" datetime="2021-04-20T13:01:17.000Z" itemprop="datePublished">2021-04-20</time>
@@ -84,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/20/%E3%80%90NLP%E3%80%911-%E4%BC%A0%E7%BB%9F%E7%AE%97%E6%B3%95%E4%B8%8E%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%9A%84%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">【NLP】1.传统算法与机器学习算法的复杂度分析</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      【NLP】1.传统算法与机器学习算法的复杂度分析
     </h1>
   
 
@@ -163,63 +171,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/04/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-04-20T11:23:40.244Z" itemprop="datePublished">2021-04-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/20/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2021/04/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/20/hello-world/" data-id="cknq1g8zl0001aou2gto49o5v" data-title="Hello World" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
